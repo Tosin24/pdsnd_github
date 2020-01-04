@@ -17,10 +17,10 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input('Please, type in the city name of the data you will like to explore; chicago, new york city or washington: \n').lower()
+    city = input('Please, type in the name of the city you will like to explore; chicago, new york city or washington: \n').lower()
     while (city not in (CITY_DATA).keys()):
         print('\nPlease, enter an appropriate selection from the options available!')
-        city = input('Please, type in the city name of the data you will like to explore; chicago, newyork or washington: \n').lower()
+        city = input('Please, type in the name of the city you will like to explore; chicago, newyork or washington: \n').lower()
         break
 
 
