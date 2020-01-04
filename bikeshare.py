@@ -17,10 +17,10 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input('Please, type in the city name of the data you will like to explore; chicago, new york city or washington: \n').lower()
+    city = input('Please, type in the name of the city you will like to explore; chicago, new york city or washington: \n').lower()
     while (city not in (CITY_DATA).keys()):
         print('\nPlease, enter an appropriate selection from the options available!')
-        city = input('Please, type in the city name of the data you will like to explore; chicago, newyork or washington: \n').lower()
+        city = input('Please, type in the name of the city you will like to explore; chicago, newyork or washington: \n').lower()
         break
 
 
@@ -168,7 +168,7 @@ def user_stats(df):
             popular_birth_year = df['Birth Year'].mode()[0]
             print('\nThe most popular year of birth is: ', popular_birth_year)
         else:
-            print('\nThe gender and year of birth for this data is not available!')
+            print('\nThe gender and year of birth for this data are not available!')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -201,7 +201,7 @@ def main():
         user_stats(df)
         raw_data_input(city)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes or no!\n')
         if restart.lower() != 'yes':
             break
 
