@@ -31,7 +31,7 @@ def get_filters():
         month = input('\nWhich month are you interested in exploring? (all, January, February, March, April, May, June)\nPlease, type all if you are interested in exploring all available months: ').title()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('\nWhat day are you interested in exploring? (all, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday)\n Please, type all if you are interested in exploring all days: ').title()
+    day = input('\nWhat day of the week are you interested in exploring? (all, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday)\n Please, type all if you are interested in exploring all days: ').title()
     if day not in ('All', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'):
         print('\nPlease, check your entry and try again!')
 
@@ -133,11 +133,11 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print('\nThe total travel time is: ', total_travel_time)
+    print('\nThe total travel time for the data you requested is: ', total_travel_time)
 
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print('\nThe mean travel time is: ', mean_travel_time)
+    print('\nThe mean travel time for the data you requestedis: ', mean_travel_time)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
