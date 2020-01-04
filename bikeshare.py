@@ -151,7 +151,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     user_types_count = df['User Type'].value_counts()
-    print('\nThe counts of user types is: \n', user_types_count)
+    print('\nThe counts of user types for the data you requested is: \n', user_types_count)
 
     # TO DO: Display counts of gender
     cities = ['chicago', 'new york city', 'washington']
@@ -162,13 +162,13 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
             earliest_birth_year = df['Birth Year'].min()
-            print('\nThe earliest year of birth is: ', earliest_birth_year)
+            print('\nThe earliest year of birth for the data you requested: ', earliest_birth_year)
             most_recent_birthyear = df['Birth Year'].max()
-            print('\nThe most recent year of birth is: ', most_recent_birthyear)
+            print('\nThe most recent year of birth for the data you requested is: ', most_recent_birthyear)
             popular_birth_year = df['Birth Year'].mode()[0]
-            print('\nThe most popular year of birth is: ', popular_birth_year)
+            print('\nThe most popular year of birth for the data you requested is: ', popular_birth_year)
         else:
-            print('\nThe gender and year of birth for this data are not available!')
+            print('\nThe gender and year of birth for the data you requested are not available!')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
