@@ -2,7 +2,7 @@
 January 04, 2020
 
 ## Project Title
-Exploring US Bikeshare data
+Exploring US Bikeshare data for three major cities
 
 ## Description
 The popularity of the bicycle sharing systems have continuously increased over the years in different cities across the world. The main objective of this system is to provide easy transportation for people of all ages.
