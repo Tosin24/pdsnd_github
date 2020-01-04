@@ -168,7 +168,7 @@ def user_stats(df):
             popular_birth_year = df['Birth Year'].mode()[0]
             print('\nThe most popular year of birth is: ', popular_birth_year)
         else:
-            print('\nThe gender and year of birth for this data is not available!')
+            print('\nThe gender and year of birth for this data are not available!')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
